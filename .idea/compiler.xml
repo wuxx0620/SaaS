@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="master_common" />
         <module name="master_server" />
-        <module name="master_commom_model" />
+        <module name="master_common_model" />
         <module name="master_company" />
       </profile>
     </annotationProcessing>
@@ -19,8 +19,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="master_commom_model" options="-parameters" />
       <module name="master_common" options="-parameters" />
+      <module name="master_common_model" options="-parameters" />
       <module name="master_company" options="-parameters" />
       <module name="wuxi" options="-parameters" />
     </option>

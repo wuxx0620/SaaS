@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>master_common</module>
-        <module>master_commom_model</module>
+        <module>master_common_model</module>
         <module>master_company</module>
     </modules>
 
