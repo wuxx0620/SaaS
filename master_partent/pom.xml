@@ -12,6 +12,7 @@
         <module>master_common</module>
         <module>master_common_model</module>
         <module>master_company</module>
+        <module>master_system</module>
     </modules>
 
     <parent>

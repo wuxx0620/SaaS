@@ -1,4 +1,4 @@
-package com.master.common;
+package com.master.system;
 
 import com.master.common.utils.IdWorker;
 import org.springframework.boot.SpringApplication;
@@ -9,18 +9,16 @@ import org.springframework.context.annotation.Bean;
 /**
  * @author wuxx
  * @version 1.0
- * @date 2020/11/13 10:53
- * @className com.eternal.wuxx.CompanyApplication
+ * @date 2020/11/16 10:39
+ * @className SystemApplication
  * @description TODO
  */
-
 @SpringBootApplication(scanBasePackages = "com.master")
-@EntityScan(value = "com.master")
-public class CompanyApplication {
-
+@EntityScan("com.master")
+public class SystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CompanyApplication.class, args);
+        SpringApplication.run(SystemApplication.class, args);
     }
 
     @Bean

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="master_common" />
         <module name="master_server" />
+        <module name="master_system" />
         <module name="master_common_model" />
         <module name="master_company" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="master_common" options="-parameters" />
       <module name="master_common_model" options="-parameters" />
       <module name="master_company" options="-parameters" />
+      <module name="master_system" options="-parameters" />
       <module name="wuxi" options="-parameters" />
     </option>
   </component>
