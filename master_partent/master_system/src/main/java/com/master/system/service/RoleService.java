@@ -67,12 +67,13 @@ public class RoleService extends BaseService {
         return roleDao.findAll(getSpec(companyId));
     }
 
-    /**
+    /**9
      * 根据id删除角色
      */
     public void delete(String id){
         roleDao.deleteById(id);
     }
+
 
     /**
      * 获取分页角色集合
