@@ -1,6 +1,7 @@
 node_modules/
 npm-debug.log
-
+/target/
+.idea
 # Numerous always-ignore extensions
 *.diff
 *.err
