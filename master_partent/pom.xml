@@ -13,6 +13,7 @@
         <module>master_common_model</module>
         <module>master_company</module>
         <module>master_system</module>
+        <module>master_eureka</module>
     </modules>
 
     <parent>

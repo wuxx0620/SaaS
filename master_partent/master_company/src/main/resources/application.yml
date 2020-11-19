@@ -12,3 +12,13 @@ spring:
     database: mysql
     show-sql: true
     open-in-view: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    perferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}

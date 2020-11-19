@@ -4,6 +4,7 @@ import com.master.common.utils.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 /**
@@ -16,6 +17,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication(scanBasePackages = "com.master")
 @EntityScan(value = "com.master")
+@EnableEurekaClient
 public class CompanyApplication {
 
 
