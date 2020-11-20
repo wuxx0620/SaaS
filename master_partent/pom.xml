@@ -14,6 +14,7 @@
         <module>master_company</module>
         <module>master_system</module>
         <module>master_eureka</module>
+        <module>master_employee</module>
     </modules>
 
     <parent>
