@@ -15,6 +15,7 @@
         <module>master_system</module>
         <module>master_eureka</module>
         <module>master_employee</module>
+        <module>master_hystrix</module>
     </modules>
 
     <parent>
@@ -85,7 +86,6 @@
             <artifactId>shiro-redis</artifactId>
             <version>3.0.0</version>
         </dependency>
-
         <!-- POI -->
         <dependency>
             <groupId>org.apache.poi</groupId>

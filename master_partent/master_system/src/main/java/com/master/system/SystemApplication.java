@@ -19,7 +19,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication(scanBasePackages = "com.master")
 @EntityScan("com.master.domain.system")
 @EnableEurekaClient
-@EnableDiscoveryClient
 @EnableFeignClients
 public class SystemApplication {
 

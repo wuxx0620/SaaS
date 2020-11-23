@@ -1,0 +1,17 @@
+#微服务注册到eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    perferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+server:
+  port: 8501
+spring:
+  application:
+    name: master-hystrix #指定服务名
+#turbine:
+#  app-config: master-company
+#  combine-host-port: true
+#  cluster-name-expression: new String('default')

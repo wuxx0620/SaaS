@@ -15,15 +15,15 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @className CompanyFeignClient
  * @description TODO
  */
-@FeignClient("master-company")
+@FeignClient(name = "master-company", fallback = CompanyFeignHystrix.class)
 public interface CompanyFeignClient {
 
     /**
      * 调用微服务的接口
      */
-    @RequestMapping(value = "/company/department/search" , method = RequestMethod.POST)
+    @RequestMapping(value = "/company/department/search", method = RequestMethod.POST)
     Department findByCode(@RequestParam("code") String code, @RequestParam("companyId") String companyId);
 
-    @RequestMapping(value = "/company/{id}" , method = RequestMethod.GET)
-    Result findCompanyById(@PathVariable(value="id") String id);
+    @RequestMapping(value = "/company/{id}", method = RequestMethod.GET)
+    Result findCompanyById(@PathVariable(value = "id") String id);
 }

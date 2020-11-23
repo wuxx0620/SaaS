@@ -38,6 +38,16 @@ public class UserController extends BaseController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private CompanyFeignClient companyFeignClient;
+
+    @RequestMapping(value = "/test/{id}", method = RequestMethod.GET)
+    public Result test(@PathVariable(value = "id") String id) {
+        Result result = companyFeignClient.findCompanyById(id);
+        return result;
+    }
+
+
     /**
      * 分配角色
      */
